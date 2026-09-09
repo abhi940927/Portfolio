@@ -5,7 +5,7 @@
 ## 🌐 Live Demo
 
 Explore the live demonstration of the project:
-[Abhinav's 3D Portfolio](#) *(Add your Vercel/Netlify link here once deployed!)*
+[Abhinav's 3D Portfolio](#) https://portfolio-8p6q.vercel.app/ 
 
 ## 📝 Description
 
