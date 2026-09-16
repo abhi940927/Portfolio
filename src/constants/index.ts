@@ -176,6 +176,60 @@ const experiences: TExperience[] = [
 const testimonials: TTestimonial[] = [
   {
     testimonial:
+      "Successfully completed the Generative AI for Beginners certification program on Udemy.",
+    name: "Generative AI for Beginners",
+    designation: "Certification",
+    company: "Udemy",
+    image: "https://ui-avatars.com/api/?name=Udemy&background=A435F0&color=fff",
+    link: "https://drive.google.com/file/d/1R1i8yhEl3bFe0Mr_xxWF3hfCWIQJxPv8/view?usp=drivesdk",
+  },
+  {
+    testimonial:
+      "Completed comprehensive training in Full stack generative and Agentic AI with Python.",
+    name: "Full Stack Generative & Agentic AI",
+    designation: "Certification",
+    company: "Udemy",
+    image: "https://ui-avatars.com/api/?name=Udemy&background=A435F0&color=fff",
+    link: "https://drive.google.com/file/d/15cGFqRrl-fwITF2VMAuz6yyyr5I56FAr/view?usp=sharing",
+  },
+  {
+    testimonial:
+      "Achieved the Oracle Certified Foundations Associate credential, demonstrating cloud & IT fundamentals.",
+    name: "Certified Foundations Associate",
+    designation: "Oracle Certified",
+    company: "Oracle",
+    image: "https://ui-avatars.com/api/?name=Oracle&background=F80000&color=fff",
+    link: "https://drive.google.com/file/d/1vMMK1bkYL8aQQVgXEHd_EQq-WVgD9BeO/view?usp=sharing",
+  },
+  {
+    testimonial:
+      "Strengthened core programming fundamentals, data structures, algorithms, and problem-solving.",
+    name: "Summer PEP Training",
+    designation: "Certificate",
+    company: "LPU PEP",
+    image: "https://ui-avatars.com/api/?name=PEP&background=0D8ABC&color=fff",
+    link: "https://drive.google.com/file/d/1ayMvqx4fij1oHmixkfxNJFWk0OXPN_iH/view?usp=sharing",
+  },
+  {
+    testimonial:
+      "Earned LeetCode 100 Days Badge with 103 active days and a 43-day maximum streak on Codolio.",
+    name: "LeetCode 100 Days Badge",
+    designation: "Achievement",
+    company: "LeetCode / Codolio",
+    image: "https://ui-avatars.com/api/?name=LeetCode&background=FFA116&color=fff",
+    link: "https://codolio.com/profile/abhinav002",
+  },
+  {
+    testimonial:
+      "Secured 3rd position among 300+ teams in ALGO ARENA 2.0 Hackathon, demonstrating competitive coding skills.",
+    name: "3rd Place - ALGO ARENA 2.0",
+    designation: "Hackathon Winner",
+    company: "ALGO ARENA",
+    image: "https://ui-avatars.com/api/?name=Algo&background=27AE60&color=fff",
+    link: "https://www.linkedin.com/in/abhinav-singh-124791322",
+  },
+  {
+    testimonial:
       "Awarded the Badge of Recognition for outstanding performance and active participation in various club activities.",
     name: "LPU CPE",
     designation: "Centre for Professional Enhancement",
