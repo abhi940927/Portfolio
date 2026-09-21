@@ -180,12 +180,30 @@ const experiences: TExperience[] = [
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "Successfully completed the Generative AI for Beginners certification program on Udemy.",
-    name: "Generative AI for Beginners",
+      "Successfully completed the Intro to AI certification, gaining a solid understanding of fundamental artificial intelligence concepts and methodologies.",
+    name: "Intro to AI",
     designation: "Certification",
-    company: "Udemy",
-    image: "https://ui-avatars.com/api/?name=Udemy&background=A435F0&color=fff",
-    link: "https://drive.google.com/file/d/1R1i8yhEl3bFe0Mr_xxWF3hfCWIQJxPv8/view?usp=drivesdk",
+    company: "AI Certification",
+    image: "https://ui-avatars.com/api/?name=AI&background=7B1FA2&color=fff",
+    link: "https://drive.google.com/file/d/1LG8iFhuhlotxIQp7c7VIhkRjEuKQ6hUw/view?usp=sharing",
+  },
+  {
+    testimonial:
+      "Completed the AI for Everyone certification, acquiring foundational knowledge of AI capabilities, business impact, and modern applications.",
+    name: "AI for Everyone",
+    designation: "Certification",
+    company: "AI Certification",
+    image: "https://ui-avatars.com/api/?name=AI&background=0056D2&color=fff",
+    link: "https://drive.google.com/file/d/1R1i8yhEl3bFe0Mr_xxWF3hfCWIQJxPv8/view?usp=drive_link",
+  },
+  {
+    testimonial:
+      "Completed the Responsible AI certification, focusing on ethical AI development, algorithmic transparency, fairness, and safety.",
+    name: "Responsible AI",
+    designation: "Certification",
+    company: "AI Ethics",
+    image: "https://ui-avatars.com/api/?name=RA&background=00897B&color=fff",
+    link: "https://drive.google.com/file/d/1XEHMAH23L12LlU0rG4LLPgO23SNcFXCs/view?usp=sharing",
   },
   {
     testimonial:
@@ -335,7 +353,7 @@ const projects: TProject[] = [
   {
     name: "Duckshow",
     description:
-      "A premium, full-stack streaming platform built with React, Node.js, and MongoDB. Features cinematic UI, user authentication, automated email notifications, and a responsive design.",
+      "A premium, full-stack video streaming platform built with React, Node.js, and MongoDB. Features cinematic UI, user authentication, automated email notifications, and a responsive design.",
     tags: [
       {
         name: "react",

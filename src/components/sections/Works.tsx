@@ -39,7 +39,10 @@ const GlassProjectCard: React.FC<{ index: number } & TProject> = ({
   };
 
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      className="h-full flex flex-col"
+    >
       <Tilt
         glareEnable
         tiltEnable
@@ -48,12 +51,14 @@ const GlassProjectCard: React.FC<{ index: number } & TProject> = ({
         glareColor="rgba(145,94,255,0.15)"
         glareMaxOpacity={0.3}
         glareBorderRadius="16px"
+        className="h-full flex flex-col flex-1"
+        style={{ display: "flex", flexDirection: "column", height: "100%" }}
       >
         <div
           ref={cardRef}
           onMouseMove={handleMouseMove}
           onClick={handleCardClick}
-          className="relative w-full sm:w-[320px] rounded-2xl overflow-hidden group cursor-pointer flex flex-col justify-between"
+          className="relative w-full rounded-2xl overflow-hidden group cursor-pointer flex flex-col justify-between flex-1 h-full"
           style={{
             background: "rgba(15, 10, 30, 0.7)",
             backdropFilter: "blur(20px)",
@@ -70,10 +75,10 @@ const GlassProjectCard: React.FC<{ index: number } & TProject> = ({
             }}
           />
 
-          <div className="relative z-10 p-5 flex flex-col flex-1 justify-between">
-            <div>
+          <div className="relative z-10 p-5 flex flex-col flex-1 justify-between h-full">
+            <div className="flex flex-col flex-1">
               {/* Image */}
-              <div className="relative h-[200px] w-full overflow-hidden rounded-xl">
+              <div className="relative h-[210px] w-full overflow-hidden rounded-xl">
                 <img
                   src={image}
                   alt={name}
@@ -138,11 +143,11 @@ const GlassProjectCard: React.FC<{ index: number } & TProject> = ({
               </div>
 
               {/* Content */}
-              <div className="mt-4">
-                <h3 className="text-[22px] font-bold text-white group-hover:text-[#a476ff] transition-colors duration-300">
+              <div className="mt-4 flex flex-col flex-1">
+                <h3 className="text-[20px] font-bold text-white group-hover:text-[#a476ff] transition-colors duration-300 min-h-[56px] flex items-center leading-snug">
                   {name}
                 </h3>
-                <p className="text-[13px] mt-2 leading-relaxed" style={{ color: "rgba(170,166,195,0.85)" }}>
+                <p className="text-[13px] mt-2 leading-relaxed flex-1" style={{ color: "rgba(170,166,195,0.85)" }}>
                   {description}
                 </p>
               </div>
@@ -253,7 +258,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 items-stretch">
         {projects.map((project, index) => (
           <GlassProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

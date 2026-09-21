@@ -31,7 +31,7 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
       variants={fadeIn("", "spring", index * 0.2, 0.75)}
       ref={cardRef}
       onMouseMove={handleMouseMove}
-      className="relative xs:w-[340px] w-full rounded-3xl overflow-hidden group cursor-pointer"
+      className="relative xs:w-[340px] w-full rounded-3xl overflow-hidden group cursor-pointer flex flex-col justify-between"
       style={{
         background: "rgba(10,8,28,0.7)",
         backdropFilter: "blur(20px)",
@@ -52,8 +52,8 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
         }}
       />
 
-      <div className="relative z-10 p-8 flex h-full flex-col justify-between">
-        <div>
+      <div className="relative z-10 p-8 flex h-full flex-col justify-between flex-1">
+        <div className="flex-1 flex flex-col">
           <div className="flex items-center justify-between mb-4">
             <span className="text-[#915EFF] text-xs font-semibold uppercase tracking-wider bg-[#915EFF]/10 px-3 py-1 rounded-full border border-[#915EFF]/25">
               {designation}
@@ -71,7 +71,7 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
             {name}
           </h3>
 
-          <p className="text-secondary text-[14px] leading-relaxed mb-4">
+          <p className="text-secondary text-[14px] leading-relaxed mb-4 flex-1">
             {testimonial}
           </p>
         </div>
