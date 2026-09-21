@@ -42,11 +42,14 @@ const DevTerminal = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [leetcode, setLeetcode] = useState<LeetCodeData | null>(null);
   const [github, setGithub] = useState<{ user: GitHubUser; repos: GitHubRepo[] } | null>(null);
+  const terminalBodyRef = useRef<HTMLDivElement>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const scrollToBottom = () => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (terminalBodyRef.current) {
+      terminalBodyRef.current.scrollTop = terminalBodyRef.current.scrollHeight;
+    }
   };
 
   useEffect(() => { scrollToBottom(); }, [lines]);
@@ -315,6 +318,7 @@ const DevTerminal = () => {
 
         {/* Terminal body */}
         <div
+          ref={terminalBodyRef}
           className="h-[420px] overflow-y-auto px-5 py-4 font-mono text-[13px] leading-relaxed cursor-text"
           onClick={() => inputRef.current?.focus()}
           style={{ scrollbarWidth: "thin", scrollbarColor: "#915EFF20 transparent" }}
@@ -346,7 +350,6 @@ const DevTerminal = () => {
               <span style={{ color: "rgba(200,200,220,0.6)" }}>:~$</span>
               <input
                 ref={inputRef}
-                autoFocus
                 value={currentInput}
                 onChange={(e) => setCurrentInput(e.target.value)}
                 onKeyDown={handleKeyDown}

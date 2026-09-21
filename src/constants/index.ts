@@ -40,6 +40,10 @@ export const navLinks: TNavLink[] = [
     title: "Work",
   },
   {
+    id: "projects",
+    title: "Projects",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -348,6 +352,7 @@ const projects: TProject[] = [
     ],
     image: carrent,
     sourceCodeLink: "https://github.com/abhi940927/Duckshow",
+    liveLink: "https://duckshow.vercel.app",
   },
   {
     name: "AI Comic Universe Builder",
@@ -369,6 +374,7 @@ const projects: TProject[] = [
     ],
     image: jobit,
     sourceCodeLink: "https://github.com/abhi940927/ai-comic-builder",
+    liveLink: "https://ai-comic-builder-bay.vercel.app/",
   },
   {
     name: "Assignment Management System",
@@ -389,7 +395,8 @@ const projects: TProject[] = [
       },
     ],
     image: tripguide,
-    sourceCodeLink: "https://github.com/abhi940927",
+    sourceCodeLink: "https://github.com/abhi940927/Assignment-Management-System",
+    liveLink: "https://assignment-management-lake.vercel.app/",
   },
 ];
 
